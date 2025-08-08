@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form and Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background: #e8491d;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: #e43d1a;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #35424a;
+            color: white;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced Form and Content Example</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>An Introduction to Our Services</h2>
+            <p>Welcome! We are excited to showcase our platform and the various features we offer. This page includes a detailed form to capture your information, as well as structured content to give you a better understanding of our offerings.</p>
+            
+            <section>
+                <h3>Our Core Principles</h3>
+                <p>We operate on a few key principles:</p>
+                <ul>
+                    <li>Customer-first approach</li>
+                    <li>Innovative solutions</li>
+                    <li>Data-driven decisions</li>
+                    <li>Seamless user experience</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Our Product Tiers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Features</th>
+                            <th>Price (per month)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic</td>
+                            <td>Access to core features</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Pro</td>
+                            <td>All Basic features + advanced analytics</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Enterprise</td>
+                            <td>All Pro features + dedicated support</td>
+                            <td>$200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Learn About Our Platform</h3>
+                <p>Watch this video to see a quick demo of our platform in action.</p>
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </article>
+
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <p>Please fill out the form below to get in touch with our team.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" placeholder="John Doe" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email_address" placeholder="john.doe@example.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="123-456-7890" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="date_of_birth">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service Preferences</legend>
+                    <div class="form-group">
+                        <label for="service-tier">Select your service tier:</label>
+                        <select id="service-tier" name="service_tier" required>
+                            <option value="" disabled selected>-- Select an option --</option>
+                            <option value="basic">Basic</option>
+                            <option value="pro">Pro</option>
+                            <option value="enterprise">Enterprise</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Contact Method:</label>
+                        <div>
+                            <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                            <label for="contact-email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="read-only-field">Read-only field:</label>
+                        <input type="text" id="read-only-field" value="This field cannot be edited." readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Forms. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
